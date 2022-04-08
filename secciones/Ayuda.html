@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +15,7 @@
     <link rel="shortcut icon" href="../imagenes/landscape.png" type="image/png" />
 </head>
 <body class="contacto">
-    <header id="navbar">
+    <header class="navbar">
         <ul class="navbar--ul">
             <li class="navbar--ul--li flex1"> 
                 <a href="../index.html"><img class="img-logo" src="../imagenes/landscape.png" alt="Inicio"></a>
@@ -33,22 +38,22 @@
     </header>
     <main>
         <ul class="barra">
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img class="bar-icon" src="../imagenes/instagram_icon_64 (1).png" alt="instagram icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img class="bar-icon" src="../imagenes/youtube_icon_64.png" alt="youtube icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img class="bar-icon" src="../imagenes/facebook_icon_64.png" alt="facebook icon">
-                </a>
-            </li>
-        </ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="bar-icon  animate__animated animate__bounceInRight" src="../imagenes/instagram_icon_64 (1).png" alt="instagram icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img class="bar-icon animate__animated animate__bounceInUp" src="../imagenes/youtube_icon_64.png" alt="youtube icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img class="bar-icon animate__animated animate__bounceInDown" src="../imagenes/facebook_icon_64.png" alt="facebook icon">
+                    </a>
+                </li>
+            </ul>
         <section>
             <h1 class="seccion-lugares--h1">Contacto</h1>
             <div class="contacto--section--div">
@@ -83,5 +88,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
