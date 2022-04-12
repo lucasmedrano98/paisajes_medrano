@@ -16,26 +16,33 @@
     <link rel="shortcut icon" href="../imagenes/landscape.png" type="image/png" />
 </head>
     <body>
-        <header class="navbar">
-                <ul class="navbar--ul">
-                    <li class="navbar--ul--li flex1"> 
-                        <a href="../index.html"><img class="img-logo" src="../imagenes/landscape.png" alt="Inicio"></a>
+        <header class="sticky-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="img-logo" src="../imagenes/landscape.png" alt="landscape"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle poppins" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lugares
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item poppins" href="section2.html">Talampaya</a></li>
+                        <li><a class="dropdown-item poppins" href="section3.html">Glaciar Perito Moreno</a></li>
+                        <li><a class="dropdown-item poppins" href="section4.html">Valle de la Luna</a></li>
+                        <li><a class="dropdown-item poppins" href="section5.html">Cataratas del Iguazú</a></li>
+                        </ul>
                     </li>
-                    <li class="navbar--ul--li flex2">
-                        <div class="dropdown">
-                            <button class="boton--navbar">Lugares</button>
-                            <div class="menu1">
-                                <a href="section2.html">Parque Talampaya</a>
-                                <a href="section3.html">Glaciar Perito Moreno</a>
-                                <a href="section4.html">Valle de la Luna</a>
-                                <a href="section5.html">Cataratas del Iguazú</a>
-                            </div>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link poppins" href="Ayuda.html">Contacto</a>
                     </li>
-                    <li class="navbar--ul--li flex3">
-                        <a class="navbar--ul--li--a" href="Ayuda.html">Contacto</a>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
+                </div>
+            </nav>
         </header>
         <main class="talampaya">
             <ul class="barra">
@@ -55,36 +62,38 @@
                     </a>
                 </li>
             </ul>
-            <section class="seccion-lugares">
-                <h1 class="seccion-lugares--h1 py-4">Parque Nacional Talampaya</h1>
-                <div class="carousel_width">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../imagenes/talampaya2.jpg" class="d-block w-100" alt="talampaya1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../imagenes/talampaya4.jpg" class="d-block w-100" alt="talampaya2">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p pt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto optio? Consequuntur id asperiores qui earum ipsa tempora assumenda minus adipisci non quibusdam, magnam amet atque eius aspernatur omnis perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus inventore architecto, dolor autem tempora suscipit a itaque facilis sunt minima sequi doloribus, ad doloremque enim. Est, autem nemo. Quis.</p>
-                <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Atracciones principales</h2>
-                <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia quo eligendi fugit rem illum ducimus nesciunt quia iste ad nemo molestias ratione exercitationem rerum, quibusdam distinctio consequuntur optio accusantium.</p>
-                <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Cómo llegar</h2>
-                <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex iusto laborum harum. Quam pariatur, delectus id aut quisquam repellendus fugiat error iusto ex eligendi veritatis harum repudiandae unde consectetur facere.</p>
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110721.2046099702!2d-67.94412665930871!3d-29.8631881890198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9682cfaa7f5b4c51%3A0xd4008391c6014968!2sParque%20Nacional%20Talampaya!5e0!3m2!1ses-419!2sar!4v1647625270304!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Recomendaciones</h2>
-                <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, unde fugit? Voluptate aliquam doloremque eveniet atque rerum repellat! Atque voluptas voluptatum iste unde quae fugiat praesentium reiciendis nihil voluptatem error.</p>
+            <section>
+                    <div class="seccion-lugares">
+                            <h1 class="seccion-lugares--h1 py-4">Parque Nacional Talampaya</h1>
+                            <div class="carousel_width">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../imagenes/talampaya2.jpg" class="d-block w-100" alt="talampaya1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../imagenes/talampaya4.jpg" class="d-block w-100" alt="talampaya2">
+                                    </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p pt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto optio? Consequuntur id asperiores qui earum ipsa tempora assumenda minus adipisci non quibusdam, magnam amet atque eius aspernatur omnis perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus inventore architecto, dolor autem tempora suscipit a itaque facilis sunt minima sequi doloribus, ad doloremque enim. Est, autem nemo. Quis.</p>
+                            <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Atracciones principales</h2>
+                            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia quo eligendi fugit rem illum ducimus nesciunt quia iste ad nemo molestias ratione exercitationem rerum, quibusdam distinctio consequuntur optio accusantium.</p>
+                            <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Cómo llegar</h2>
+                            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex iusto laborum harum. Quam pariatur, delectus id aut quisquam repellendus fugiat error iusto ex eligendi veritatis harum repudiandae unde consectetur facere.</p>
+                            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110721.2046099702!2d-67.94412665930871!3d-29.8631881890198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9682cfaa7f5b4c51%3A0xd4008391c6014968!2sParque%20Nacional%20Talampaya!5e0!3m2!1ses-419!2sar!4v1647625270304!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Recomendaciones</h2>
+                            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, unde fugit? Voluptate aliquam doloremque eveniet atque rerum repellat! Atque voluptas voluptatum iste unde quae fugiat praesentium reiciendis nihil voluptatem error.</p>
+                </div>   
             </section>
         </main>
         <footer class="footer">

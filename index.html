@@ -17,27 +17,34 @@
     </head>
     <body>
          <!--navbar-->
-        <header class="navbar">
-            <ul class="navbar--ul">
-                <li class="navbar--ul--li flex1"> 
-                        <a href="index.html"><img class="img-logo" src="./imagenes/landscape.png" alt="Inicio"></a>
-                </li>
-                <li class="navbar--ul--li flex2">
-                    <div class="dropdown">
-                        <button class="boton--navbar">Lugares</button>
-                            <div class="menu1">
-                                <a href="secciones/section2.html">Parque Talampaya</a>
-                                <a href="secciones/section3.html">Glaciar Perito Moreno</a>
-                                <a href="secciones/section4.html">Valle de la Luna</a>
-                                <a href="secciones/section5.html">Cataratas del Iguazú</a>
-                            </div>
-                    </div>
-                </li>
-                <li class="navbar--ul--li flex3">
-                        <a class="navbar--ul--li--a" href="secciones/Ayuda.html">Contacto</a>
-                </li>
-            </ul>
-        </header>
+         <header class="sticky-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="img-logo" src="./imagenes/landscape.png" alt="landscape"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle poppins" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lugares
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item poppins" href="secciones/section2.html">Talampaya</a></li>
+                        <li><a class="dropdown-item poppins" href="secciones/section3.html">Glaciar Perito Moreno</a></li>
+                        <li><a class="dropdown-item poppins" href="secciones/section4.html">Valle de la Luna</a></li>
+                        <li><a class="dropdown-item poppins" href="secciones/section5.html">Cataratas del Iguazú</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins" href="/secciones/Ayuda.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>    
          <!--barra flotante de redes-->
         <main>
             <ul class="barra">
@@ -117,7 +124,7 @@
             </section>
         </main>
          <!--footer-->
-        <footer class="footer">
+        <footer class="container-fluid footer">
             <section class="flex-row">
                 <div>
                     <p class="footer--p">Copyright Lucas Medrano</p>

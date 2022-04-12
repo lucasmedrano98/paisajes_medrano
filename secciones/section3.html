@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,29 +13,36 @@
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Paisajes Argentinos</title>
-    <link rel="shortcut icon" href="landscape.png" type="image/png" />
+    <link rel="shortcut icon" href="../imagenes/landscape.png" type="image/png" />
 </head>
 <body>
-    <header class="navbar">
-        <ul class="navbar--ul">
-            <li class="navbar--ul--li flex1"> 
-                <a href="../index.html"><img class="img-logo" src="../imagenes/landscape.png" alt="Inicio"></a>
-            </li>
-            <li class="navbar--ul--li flex2">
-                <div class="dropdown">
-                    <button class="boton--navbar">Lugares</button>
-                    <div class="menu1">
-                        <a href="section2.html">Parque Talampaya</a>
-                        <a href="section3.html">Glaciar Perito Moreno</a>
-                        <a href="section4.html">Valle de la Luna</a>
-                        <a href="section5.html">Cataratas del Iguazú</a>
-                    </div>
-                </div>
-            </li>
-            <li class="navbar--ul--li flex3">
-                <a class="navbar--ul--li--a" href="Ayuda.html">Contacto</a>
-            </li>
-        </ul>
+    <header class="sticky-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="img-logo" src="../imagenes/landscape.png" alt="landscape"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle poppins" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lugares
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item poppins" href="section2.html">Talampaya</a></li>
+                    <li><a class="dropdown-item poppins" href="section3.html">Glaciar Perito Moreno</a></li>
+                    <li><a class="dropdown-item poppins" href="section4.html">Valle de la Luna</a></li>
+                    <li><a class="dropdown-item poppins" href="section5.html">Cataratas del Iguazú</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link poppins" href="Ayuda.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
     <main class="glaciar">
         <ul class="barra">
@@ -55,23 +63,35 @@
             </li>
         </ul>
         <section class="seccion-lugares">
-            <h1 class="seccion-lugares--h1">Glaciar Perito Moreno</h1>
-            <img class="img-lugares" src="../imagenes/glaciar3.jpg" alt="Glaciar perito moreno">
-            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto optio? Consequuntur id asperiores qui earum ipsa tempora assumenda minus adipisci non quibusdam, magnam amet atque eius aspernatur omnis perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus inventore architecto, dolor autem tempora suscipit a itaque facilis sunt minima sequi doloribus, ad doloremque enim. Est, autem nemo. Quis.</p>
+            <h1 class="seccion-lugares--h1 py-4">Glaciar Perito Moreno</h1>
+            <div class="carousel_width">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imagenes/glaciar3.jpg" class="d-block w-100" alt="glaciar">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagenes/glaciar4.jpg" class="d-block w-100" alt="glaciar">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p pt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto optio? Consequuntur id asperiores qui earum ipsa tempora assumenda minus adipisci non quibusdam, magnam amet atque eius aspernatur omnis perferendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis temporibus inventore architecto, dolor autem tempora suscipit a itaque facilis sunt minima sequi doloribus, ad doloremque enim. Est, autem nemo. Quis.</p>
             <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Atracciones principales</h2>
             <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia quo eligendi fugit rem illum ducimus nesciunt quia iste ad nemo molestias ratione exercitationem rerum, quibusdam distinctio consequuntur optio accusantium.</p>
             <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Cómo llegar</h2>
             <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex iusto laborum harum. Quam pariatur, delectus id aut quisquam repellendus fugiat error iusto ex eligendi veritatis harum repudiandae unde consectetur facere.</p>
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81206.26700903483!2d-73.19973454658204!3d-50.502618339301826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbda4c963217850c3%3A0xa481a2efaf7479be!2sGlaciar%20Perito%20Moreno!5e0!3m2!1ses-419!2sar!4v1647628701688!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Recomendaciones</h2>
-            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, unde fugit? Voluptate aliquam doloremque eveniet atque rerum repellat! Atque voluptas voluptatum iste unde quae fugiat praesentium reiciendis nihil voluptatem error.</p>
-            <h2 data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--h2">Galería</h2>
-            <ul class=ul-img-lugares>
-                <li class="ul-img-lugares--li"><img src="../imagenes/glaciar.jpg" alt="Glaciar perito moreno"></li>
-                <li class="ul-img-lugares--li"><img src="../imagenes/glaciar2.jpg" alt="Glaciar perito moreno"></li>
-                <li class="ul-img-lugares--li"><img src="../imagenes/glaciar3.jpg" alt="Glaciar perito moreno"></li>
-                <li class="ul-img-lugares--li"><img src="../imagenes/glaciar4.jpg" alt="Glaciar perito moreno"></li>
-            </ul>
+            <p data-aos="fade-right" data-aos-duration="1250" class="seccion-lugares--p pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, unde fugit? Voluptate aliquam doloremque eveniet atque rerum repellat! Atque voluptas voluptatum iste unde quae fugiat praesentium reiciendis nihil voluptatem error.</p>
         </section>
     </main>
     <footer class="footer">
@@ -81,6 +101,7 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
