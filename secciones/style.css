@@ -172,8 +172,8 @@ p{color: #ddd;
     border-radius: 4%;
     padding:1rem;
     margin: 2rem;
-    background-color: #9fa79f;
-    border: 3px solid black;
+    background-color: #ddd;
+    border: 1px solid rgb(204, 204, 204);
     }
 
 .form--div {
@@ -190,7 +190,7 @@ p{color: #ddd;
 }
 
 .contacto{
-    background-image: linear-gradient(rgb(121, 117, 117),rgb(0, 0, 0));
+    background-color: #ddd;
 }
 
 .contacto--section--div{
@@ -198,11 +198,10 @@ p{color: #ddd;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:1rem;
 }
 
 .form input[type="submit"] {
-    background-color:#f1f1f1;
+    background-color:#ddd;
     border-bottom:none;
     padding:1rem;
 }
@@ -213,13 +212,23 @@ p{color: #ddd;
 }
 
 .form input[type="submit"]:hover {
-    background-color:#f1f1f15d;
+    background-color:#4d4b4b5d;
 }
 
 .form textarea {
     font-family: 'Poppins', sans-serif;
     min-height: 10rem;
     resize:none;
+}
+
+.contacto--h1 {
+    margin:0;
+    text-align: center;
+        font-size:4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color:rgb(0, 0, 0);
+        padding-top:1rem;
 }
 
 .talampaya {background-image:url(../imagenes/talampaya2.jpg);
@@ -357,6 +366,10 @@ h2{color: #f1f1f1;}
 }
 .barra {
     width:4%;
+}
+
+.div_lugares {
+    border-right:1px solid white;
 }
 
 }
