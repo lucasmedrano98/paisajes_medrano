@@ -1,6 +1,4 @@
 .sticky-nav {
-    position:sticky;
-    top:0;
     width: 100%;
     height:auto;
     z-index: 100;
@@ -345,6 +343,10 @@ h2{color: #f1f1f1;}
 
 
 @media screen and (min-width:1024px) {
+
+.sticky-nav {
+        position:sticky;
+        top:0;}
 
 .img-logo {
     margin-left: 1rem;
