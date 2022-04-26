@@ -1,0 +1,17 @@
+.sticky-nav {
+    width: 100%;
+    height: auto;
+    z-index: 100;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(62, 62, 62));
+    z-index: 100;
+    border-bottom: 0.2rem solid rgb(55, 55, 56);
+  }
+
+  .img-logo {
+    width: 3rem;
+  }

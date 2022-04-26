@@ -1,0 +1,94 @@
+.talampaya {
+    background-image: url(../imagenes/talampaya2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .glaciar {
+    background-image: url(../imagenes/glaciar4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .valle {
+    background-image: url(../imagenes/Valledelaluna5.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .cataratas {
+    background-image: url(../imagenes/Cataratas1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .seccion-lugares {
+    background-color: #000000;
+  }
+  
+  .seccion-lugares--h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: #ddd;
+    -webkit-text-stroke: rgb(0, 0, 0) 2px;
+    padding-top: 1rem;
+  }
+  
+  .seccion-lugares--h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0 2rem 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+  
+  .seccion-lugares--p {
+    padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+  
+  .mapa {
+    display: block;
+    margin: 2rem auto;
+    width: 70%;
+    height: 400px;
+  }
+  
+  .img-lugares {
+    display: block;
+    margin: 3rem auto;
+    width: 90%;
+  }
+  
+  .ul-img-lugares {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    color: white;
+    justify-content: center;
+  }
+  
+  .ul-img-lugares--li {
+    margin: 3rem;
+    list-style: none;
+    width: 30rem;
+  }
+
+  .carousel_width {
+    margin: auto;
+    width: 90%;
+  }
