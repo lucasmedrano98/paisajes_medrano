@@ -31,7 +31,7 @@
   grid-template-areas: "talampaya" "glaciar" "valle" "cataratas";
 }
 
-.d2 {
+.d2, .d5, .d4, .d3 {
   background-image: url(../imagenes/talampaya2.jpg);
   height: 50rem;
   background-repeat: no-repeat;
@@ -44,9 +44,6 @@
 
 .d3 {
   background-image: url(../imagenes/glaciar.jpg);
-  height: 50rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .arriba--izquierda {
@@ -81,16 +78,10 @@
 
 .d4 {
   background-image: url(../imagenes/Valledelaluna.jpg);
-  height: 50rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .d5 {
   background-image: url(../imagenes/cataratas2.jpg);
-  height: 50rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .titulo-centrado {
@@ -177,42 +168,6 @@
   padding-top: 1rem;
 }
 
-.talampaya {
-  background-image: url(../imagenes/talampaya2.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.glaciar {
-  background-image: url(../imagenes/glaciar4.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.valle {
-  background-image: url(../imagenes/Valledelaluna5.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.cataratas {
-  background-image: url(../imagenes/Cataratas1.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.seccion-lugares {
-  background-color: #000000;
-}
-
 .seccion-lugares--h1 {
   margin: 0;
   text-align: center;
@@ -225,19 +180,43 @@
 
 .seccion-lugares--h2 {
   text-align: center;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   padding: 2rem 0 2rem 0;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
 .seccion-lugares--p {
-  padding-top: 2rem;
-  font-family: "Poppins", sans-serif;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 2rem;
   line-height: 2rem;
   margin: auto;
   font-size: 1.3rem;
+}
+
+.talampaya, .cataratas, .valle, .glaciar {
+  background-image: url(../imagenes/talampaya2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.glaciar {
+  background-image: url(../imagenes/glaciar4.jpg);
+}
+
+.valle {
+  background-image: url(../imagenes/Valledelaluna5.jpg);
+}
+
+.cataratas {
+  background-image: url(../imagenes/Cataratas1.jpg);
+}
+
+.seccion-lugares {
+  background-color: #000000;
 }
 
 .mapa {

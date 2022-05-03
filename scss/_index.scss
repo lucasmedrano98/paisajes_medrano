@@ -25,10 +25,8 @@
   }
   
   .d3 {
+   @extend .d2; 
     background-image: url(../imagenes/glaciar.jpg);
-    height: 50rem;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   
   .arriba--izquierda {
@@ -61,17 +59,14 @@
   }
   
   .d4 {
+    @extend .d2;
     background-image: url(../imagenes/Valledelaluna.jpg);
-    height: 50rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
   }
   
   .d5 {
+    @extend .d2;
     background-image: url(../imagenes/cataratas2.jpg);
-    height: 50rem;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .titulo-centrado {

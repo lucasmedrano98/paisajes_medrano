@@ -1,3 +1,39 @@
+@mixin secciones-text {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+$size: (
+  h1:4rem,
+  h2:1.5rem,
+  p:1.3rem,
+);
+
+.seccion-lugares--h1{
+    margin: 0;
+    text-align: center;
+    font-size:map-get($size,h1);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: #ddd;
+    -webkit-text-stroke: rgb(0, 0, 0) 2px;
+    padding-top: 1rem;
+  }
+  
+  .seccion-lugares--h2 {
+    @include secciones-text;
+    font-size: map-get($size,h2);
+    padding: 2rem 0 2rem 0;
+    font-weight: bold;
+  }
+  
+  .seccion-lugares--p {
+    @include secciones-text;
+    padding-top: 2rem;
+    line-height: 2rem;
+    margin: auto;
+    font-size: map-get($size,p);
+  }
+
 .talampaya {
     background-image: url(../imagenes/talampaya2.jpg);
     background-attachment: fixed;
@@ -7,60 +43,24 @@
   }
   
   .glaciar {
+    @extend .talampaya;
     background-image: url(../imagenes/glaciar4.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   
   .valle {
+    @extend .talampaya;
     background-image: url(../imagenes/Valledelaluna5.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   
   .cataratas {
+    @extend .talampaya;
     background-image: url(../imagenes/Cataratas1.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .seccion-lugares {
     background-color: #000000;
   }
-  
-  .seccion-lugares--h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 4rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: #ddd;
-    -webkit-text-stroke: rgb(0, 0, 0) 2px;
-    padding-top: 1rem;
-  }
-  
-  .seccion-lugares--h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 2rem 0 2rem 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-  }
-  
-  .seccion-lugares--p {
-    padding-top: 2rem;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    line-height: 2rem;
-    margin: auto;
-    font-size: 1.3rem;
-  }
-  
+
   .mapa {
     display: block;
     margin: 2rem auto;
