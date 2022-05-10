@@ -1,7 +1,7 @@
 {
   "name": "paisajes-medrano",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina orientada a la muestra y explicacion de los paisajes que se encuentran en el territorio argentino",
   "main": "index.js",
   "scripts": {
     "compile:sass":"sass --watch scss/style.scss css/style.css"

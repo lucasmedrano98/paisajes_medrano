@@ -85,3 +85,12 @@
     height: 35rem;
     background-repeat: no-repeat;
   }
+
+  @media screen and (min-width: 1024px) {
+    .abajo--izquierda {
+      margin: 33rem 0 0 5rem;
+    }
+    #s1 {
+      height: 54rem;
+    }
+  }

@@ -16,6 +16,16 @@
   width: 3rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+  }
+
+  .img-logo {
+    margin-left: 1rem;
+  }
+}
 .introduccion {
   min-height: 200px;
   text-align: center;
@@ -101,6 +111,15 @@
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1024px) {
+  .abajo--izquierda {
+    margin: 33rem 0 0 5rem;
+  }
+
+  #s1 {
+    height: 54rem;
+  }
+}
 .form {
   text-align: center;
   font-family: sans-serif;
@@ -251,6 +270,20 @@
   width: 90%;
 }
 
+@media screen and (min-width: 1024px) {
+  .seccion-lugares {
+    width: 85%;
+    margin: auto;
+  }
+
+  .seccion-lugares--p {
+    padding: 0 5rem;
+  }
+
+  .div_lugares {
+    border-right: 1px solid white;
+  }
+}
 .poppins {
   font-family: "Poppins", sans-serif;
 }
@@ -321,38 +354,8 @@ h2 {
 }
 
 @media screen and (min-width: 1024px) {
-  .sticky-nav {
-    position: sticky;
-    top: 0;
-  }
-
-  .img-logo {
-    margin-left: 1rem;
-  }
-
-  .abajo--izquierda {
-    margin: 33rem 0 0 5rem;
-  }
-
-  .seccion-lugares {
-    width: 85%;
-    margin: auto;
-  }
-
-  #s1 {
-    height: 54rem;
-  }
-
-  .seccion-lugares--p {
-    padding: 0 5rem;
-  }
-
   .barra {
     width: 4%;
-  }
-
-  .div_lugares {
-    border-right: 1px solid white;
   }
 }
 

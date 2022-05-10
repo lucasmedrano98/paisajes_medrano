@@ -92,3 +92,18 @@ $size: (
     margin: auto;
     width: 90%;
   }
+
+  @media screen and (min-width: 1024px) {
+    .seccion-lugares {
+      width: 85%;
+      margin: auto;
+    }
+
+    .seccion-lugares--p {
+      padding: 0 5rem;
+    }
+
+    .div_lugares {
+      border-right: 1px solid white;
+    }
+  }
